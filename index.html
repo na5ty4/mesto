@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto</title>
+    <link rel="stylesheet" href="./pages/index.css"> 
+</head>
+<body class="page">
+    <header class="header">
+        <img src="images/headerlogo.svg" alt="Логотип" class="header__logo">
+        <div class="header__separator"></div>
+    </header>
+    <main class="content">
+        <section class="profile">
+            <div class="profile__block">
+                <img src="images/avatar.jpg" alt="Аватар" class="profile__avatar">
+                <div class="profile__profile-info">
+                    <div class="profile__group">
+                        <h1 class="profile__name">Жак-Ив Кусто</h1>
+                        <p class="profile__description">Исследователь океана</p>
+                    </div>
+                    <button class="profile__edit-button"></button>
+                </div>
+            </div>
+            <button class="profile__add-button"></button>
+        </section>
+        <section class="elements">
+            <div class="element">
+                <img src="images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск" class="element__image">
+                <div class="element__block">
+                    <h2 class="element__title">Карачаевск</h2>
+                    <div class="element__like-button"></div>
+                </div>
+            </div>
+            <div class="element">
+                <img src="images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск" class="element__image">
+                <div class="element__block">
+                    <h2 class="element__title">Карачаевск</h2>
+                    <div class="element__like-button"></div>
+                </div>
+            </div>
+            <div class="element">
+                <img src="images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск" class="element__image">
+                <div class="element__block">
+                    <h2 class="element__title">Карачаевск</h2>
+                    <div class="element__like-button"></div>
+                </div>
+            </div>
+            <div class="element">
+                <img src="images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск" class="element__image">
+                <div class="element__block">
+                    <h2 class="element__title">Карачаевск</h2>
+                    <div class="element__like-button"></div>
+                </div>
+            </div>
+            <div class="element">
+                <img src="images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск" class="element__image">
+                <div class="element__block">
+                    <h2 class="element__title">Карачаевск</h2>
+                    <div class="element__like-button"></div>
+                </div>
+            </div>
+            <div class="element">
+                <img src="images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск" class="element__image">
+                <div class="element__block">
+                    <h2 class="element__title">Карачаевск</h2>
+                    <div class="element__like-button"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+    </footer>
+    <div class="popup popup_hidden">
+        <div class="popup__content">
+            <button class="popup__close-button"></button>
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <input type="text" class="popup__profile-name">
+            <input type="text" class="popup__profile-description">
+            <button class="popup__save-button" type="submit">Сохранить</button>
+        </div>
+    </div>
+    <script src="./pages/index.js"></script>
+</body>
+</html>

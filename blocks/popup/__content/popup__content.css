@@ -1,0 +1,12 @@
+.popup__content {
+    width: 430px;
+    height: 330px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+}
