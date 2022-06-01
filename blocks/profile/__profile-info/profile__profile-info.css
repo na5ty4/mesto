@@ -1,7 +1,7 @@
 .profile__profile-info {
     display:flex;
     flex-direction: row;
-
+    max-width: 336px;
     margin: 0 0 0 30px;
     padding: auto 0;
 }

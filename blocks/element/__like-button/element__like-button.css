@@ -4,3 +4,8 @@
     background: url(../../../images/like-button.svg) center no-repeat;
     margin-right: 20px;
 }
+
+
+.element__like-button:hover{
+    opacity: 0.5;
+}

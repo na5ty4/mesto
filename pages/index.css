@@ -28,3 +28,4 @@
 @import url(../blocks/popup/__profile-description/popup__profile-description.css);
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/_hidden/popup_hidden.css);
+@import url(../blocks/element/__like-button/_active/element__like-button_active.css);

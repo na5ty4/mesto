@@ -7,6 +7,7 @@ let nameInput = document.querySelector('.popup__profile-name');
 let jobInput = document.querySelector('.popup__profile-description');
 let profileName = document.querySelector('.profile__name');
 let profileDescription = document.querySelector('.profile__description');
+let likeButton = document.querySelector('.element__like-button');
 
 editButton.addEventListener('click', function() {
     popup.classList.remove('popup_hidden');

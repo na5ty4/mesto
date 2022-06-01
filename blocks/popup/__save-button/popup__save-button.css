@@ -11,3 +11,17 @@
     margin: 0 0 37px 36px;
     border-radius: 2px;
 }
+
+@media screen and (max-width: 648px) { 
+    .popup__save-button { 
+        width: 238px;
+        height: 46px;
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0 0 25px 22px;
+    }  
+} 
+
+.popup__save-button:hover{
+    opacity: 0.8;
+}
