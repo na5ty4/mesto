@@ -3,9 +3,11 @@
     height: 19px;
     background: url(../../../images/like-button.svg) center no-repeat;
     margin-right: 20px;
+    border: none;
 }
 
 
 .element__like-button:hover{
     opacity: 0.5;
+    cursor: pointer;
 }

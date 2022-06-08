@@ -6,6 +6,12 @@
     color: #545454;
 }
 
+@media screen and (max-width: 880px) { 
+    .footer__copyright { 
+        margin-left: calc((100% - 581px)/4);
+    }  
+} 
+
 @media screen and (max-width: 648px) { 
     .footer__copyright { 
         width: 282px;
