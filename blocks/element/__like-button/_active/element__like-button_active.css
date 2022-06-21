@@ -1,3 +1,15 @@
 .element__like-button_active {
-    background: #000000;
+    background: url(../../../images/like-button-active.svg) center no-repeat;
+    width: 22px;
+    height: 19px;
+    margin-right: 20px;
+    border: none;
+}
+
+.element__like-button_inactive {
+    background: url(../../../images/like-button.svg) center no-repeat;
+    width: 22px;
+    height: 19px;
+    margin-right: 20px;
+    border: none;
 }
