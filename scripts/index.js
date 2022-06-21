@@ -53,16 +53,16 @@ function openImagePopup(name, link) {
   openPopUp(popupImage);
 }
 
-function likeCard(elem) {
+/*function likeCard(elem) {
   elem.classList.toggle('element__like-button_active');
-};
+};*/
 
 function renderCard(item) {
     const newElement = elementTemplate.querySelector('.element').cloneNode(true);
     newElement.querySelector('.element__image').src = item.link;
     newElement.querySelector('.element__title').textContent = item.name;
-    newElement.querySelector('.element__like-button').addEventListener('click', function() {
-      likeCard(newElement.querySelector('.element__like-button'));
+    newElement.querySelector('.element__like-button').addEventListener('click', function(evt) {
+      evt.target.classList.toggle('element__like-button_active');
     });
     newElement.querySelector('.element__delete-button').addEventListener('click', function() {
       deleteCard(newElement);
@@ -70,8 +70,6 @@ function renderCard(item) {
     newElement.querySelector('.element__image').addEventListener('click', function() {
       openImagePopup(item.name, item.link);
     });
-
-    
 
     elements.prepend(newElement);
 };
