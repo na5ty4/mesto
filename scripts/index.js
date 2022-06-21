@@ -26,14 +26,14 @@ const initialCards = [
   ]; 
 const editButton = document.querySelector('.profile__edit-button');
 const popup = document.querySelector('.popup');
-const popupNewCard = document.querySelector('.popup_new-card');
-const popupImage = document.querySelector('.image-popup');
+const popupNewCard = document.querySelector('.popup_type_new-card');
+const popupImage = document.querySelector('.popup_type_image');
 const closeButton = document.querySelector('.popup__close-button');
 const closeButtonNewCard = document.querySelector('.popup__close-button_new-card');
 const closeButtonImagePopup = document.querySelector('.popup__close-button_image-popup');
 const addButton = document.querySelector('.profile__add-button');
 const formElement = document.querySelector('.popup__content');
-const formElementNewCard = document.querySelector('.popup__content_new-card');
+const formElementNewCard = document.querySelector('.popup__content_purpose_new-card');
 let nameInput = document.querySelector('#profile-name');
 let jobInput = document.querySelector('#profile-description');
 let profileName = document.querySelector('.profile__name');
@@ -48,14 +48,14 @@ function openPopUp(pop) {
 };
 
 function openImagePopup(name, link) {
-  popupImage.querySelector('.image-popup__image').src = link;
-  popupImage.querySelector('.image-popup__title').textContent = name;
+  popupImage.querySelector('.popup__image').src = link;
+  popupImage.querySelector('.popup__image-title').textContent = name;
   openPopUp(popupImage);
 }
 
-/*function likeCard(elem) {
-  elem.classList.toggle('element__like-button_active');
-};*/
+function deleteCard(item) {
+  item.remove();
+};
 
 function renderCard(item) {
     const newElement = elementTemplate.querySelector('.element').cloneNode(true);
@@ -76,6 +76,10 @@ function renderCard(item) {
 
 initialCards.forEach(renderCard);
 
+function closePopUp(pop) {
+  pop.classList.remove('popup_opened');
+};
+
 function createCard(evt) {
     evt.preventDefault(); 
     formElementNewCard.link = placeLink.value;
@@ -84,21 +88,11 @@ function createCard(evt) {
     closePopUp(popupNewCard);
 };
 
-
-
-function closePopUp(pop) {
-    pop.classList.remove('popup_opened');
-};
-
 addButton.addEventListener('click', function() {
   openPopUp(popupNewCard);
   placeName.value = '';
   placeLink.value = '';
 });
-
-function deleteCard(item) {
-  item.remove();
-};
 
 editButton.addEventListener('click', function() {
     openPopUp(popup);
