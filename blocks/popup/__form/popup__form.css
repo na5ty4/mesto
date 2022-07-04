@@ -1,3 +1,23 @@
 .popup__form {
-    
+    height: 219px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.popup__input-blocks {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popup__input-block {
+    height: 65px;
+}
+
+@media screen and (max-width: 648px) { 
+    .popup__form { 
+        height: 200px;
+    }  
+} 

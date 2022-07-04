@@ -130,4 +130,21 @@ formElementEditProfile.addEventListener('submit', formSubmitHandler);
 
 formElementNewCard.addEventListener('submit', createUserCard);
 
+function closePopUpByEsc(evt) {
+  if(evt.key === "Escape"){
+  closePopUp(popupEditProfile);
+  closePopUp(popupNewCard);
+  closePopUp(popupImage);
+}
+};
 
+document.addEventListener('keydown', closePopUpByEsc);
+
+const popupList = Array.from(document.querySelectorAll('.popup'));
+popupList.forEach((popupElement) => {
+  popupElement.addEventListener('click', function(evt) {
+    if (evt.target === evt.currentTarget) {
+      closePopUp(popupElement);
+    }
+  });
+});
