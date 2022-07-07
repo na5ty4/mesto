@@ -6,4 +6,6 @@
 
 .popup__save-button_inactive:hover {
     cursor: default;
+    opacity: 1;
+
 }

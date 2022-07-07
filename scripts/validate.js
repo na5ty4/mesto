@@ -66,4 +66,4 @@ const toggleButtonState = (inputList, buttonElement, config) => {
   
   enableValidation(validationConfig);
   
-  
+ 
