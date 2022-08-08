@@ -1,5 +1,6 @@
-
 const popupImage = document.querySelector('.popup_type_image');
+const popupImageSrc = popupImage.querySelector('.popup__image');
+const popupImageTitle = popupImage.querySelector('.popup__image-title');
 
 function handleEscClose(evt) {
     if (evt.key === "Escape"){
@@ -18,4 +19,4 @@ function openPopUp(popup) {
     document.addEventListener('keydown', handleEscClose);
 };
 
-export{openPopUp, closePopUp, popupImage};
+export{openPopUp, closePopUp, popupImage, popupImageSrc, popupImageTitle};
