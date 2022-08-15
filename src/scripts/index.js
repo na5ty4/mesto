@@ -1,3 +1,5 @@
+import '../pages/index.css';
+
 import { Card } from './Card.js';
 import { FormValidator } from './FormValidator.js';
 import { initialCards } from './data.js';
@@ -5,8 +7,6 @@ import { Section } from './Section.js';
 import { PopupWithImage } from './PopupWithImage.js';
 import { PopupWithForm } from './PopupWithForm.js';
 import { UserInfo } from './UserInfo.js';
-/* добавила подключение css*/
-import '../pages/index.css';
 
 const validationConfig = {
   formSelector: '.popup__form',
