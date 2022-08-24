@@ -1,8 +1,25 @@
 .profile__avatar {
-    background-image: url(../../../images/avatar.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
     width: 120px;
     height: 120px;
+    position: relative;
+}
+
+.profile__avatar:hover{
+    opacity: 0.8;
+}
+
+.profile__edit-photo-button {
+    background: url(../../../images/photo-edit-button.svg) center no-repeat;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border: none;
+    display: none;
+}
+
+.profile__avatar:hover + .profile__edit-photo-button {
+    display: inline-block;
 }

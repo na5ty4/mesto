@@ -1,30 +1,3 @@
-export const initialCards = [
-    {
-      name: 'Архыз',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
-    },
-    {
-      name: 'Челябинская область',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
-    },
-    {
-      name: 'Иваново',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
-    },
-    {
-      name: 'Камчатка',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
-    },
-    {
-      name: 'Холмогорский район',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
-    },
-    {
-      name: 'Байкал',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
-    }
-];
-
 export const validationConfig = {
   formSelector: '.popup__form',
   inputSelector: '.popup__input',
@@ -32,4 +5,12 @@ export const validationConfig = {
   inactiveButtonClass: 'popup__save-button_inactive',
   inputErrorClass: 'popup__input_type_error',
   errorActiveClass: 'popup__input-error_active'
+};
+
+export const apiConfig = {
+  url: 'https://mesto.nomoreparties.co/v1/cohort-48',
+  headers: {
+    "content-type": "application/json",
+    "authorization": '401c464d-109c-4fd2-a4b7-346e3caa6d96'
+  }
 };
