@@ -11,8 +11,7 @@ export class PopupWithConfirmation extends Popup {
         super.setEventListeners(buttonClosePopup);
         this._element.addEventListener('submit', (evt) => {
             evt.preventDefault();
-            this._handleSubmitForm(this._currentId, this._deleteFunc);
-            this.close();
+            this._handleSubmitForm(this._currentId, () => { this._processDelete(); });
         });
     }
 
@@ -20,5 +19,10 @@ export class PopupWithConfirmation extends Popup {
         super.open();
         this._currentId = id;
         this._deleteFunc = deleteCard;
+    }
+
+    _processDelete() {
+        this._deleteFunc();
+        this.close();
     }
 }

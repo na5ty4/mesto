@@ -22,7 +22,6 @@ export class PopupWithForm extends Popup {
         if (isChanging) {
             this._saveButton.textContent = 'Сохранение...';
         } else {
-            this.close();
             this._saveButton.textContent = this._defaultText;
         }
     }
@@ -31,7 +30,7 @@ export class PopupWithForm extends Popup {
         super.setEventListeners(buttonClosePopup);
         this._element.addEventListener('submit', (evt) => {
             evt.preventDefault();
-            this._handleSubmitForm(this._getInputValues(), (isChanging) => { this._setSaveButtonText(isChanging); });
+            this._handleSubmitForm(this._getInputValues(), (isChanging) => { this._setSaveButtonText(isChanging); }, () => { this.close(); });
         });
     }
 
